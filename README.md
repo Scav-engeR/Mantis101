@@ -2,7 +2,7 @@
 My Mantis Botnet Analytics - For Research Purposes 
 # Mantis Botnet: Advanced DDoS Infrastructure Analysis
 
-![Mantis Botnet Banner](./assets/mantis-banner.png)
+![Mantis Botnet Banner](./assets/mantis-banner.svg)
 
 By: **Scav-engeR**
 
