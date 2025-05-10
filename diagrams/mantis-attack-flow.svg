@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1000 700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1000" height="700" fill="#f8fafc" />
+  
+  <!-- Title -->
+  <text x="500" y="4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZVMantis Botnet: Attack Flow Diagram</text>
+  <text x="500" y="70" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#64748b">By: Scav-engeR</text>
+  
+  <!-- Step 1: Botnet Controller -->
+  <g transform="translate(500, 150)">
+    <!-- Controller Box -->
+    <rect x="-100" y="-50" width="200" height="100" rx="10" fill="#fecaca" stroke="#ef4444" stroke-width="2" />
+    <text x="0" y="-15" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="bold" fill="#7f1d1d">Botnet Controller</text>
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#7f1d1d">Command & Control Server</text>
+    
+    <!-- Arrows to VM Bots -->
+    <path d="M-150,-10 L-250,50" stroke="#334155" stroke-width="2" marker-end="url(#arrowhead)" />
+    <path d="M-150,10 L-250,100" stroke="#334155" stroke-width="2" marker-end="url(#arrowhead)" />
+    <path d="M-150,30 L-250,150" stroke="#334155" stroke-width="2" marker-end="url(#arrowhead)" />
+    
+    <path d="M150,-10 L250,50" stroke="#334155" stroke-width="2" marker-end="url(#arrowhead)" />
+    <path d="M150,10 L250,100" stroke="#334155" stroke-width="2" marker-end="url(#arrowhead)" />
+    <path d="M150,30 L250,150" stroke="#334155" stroke-width="2" marker-end="url(#arrowhead)" />
+    
+    <!-- Attack Command Label -->
+    <text x="-200" y="30" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#475569" transform="rotate(-30 -200 30)">Attack Commands</text>
+    <text x="200" y="30" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#475569" transform="rotate(30 200 30)">Attack Commands</text>
+  </g>
+  
+  <!-- Step 2: VM Bots Left Side -->
+  <g transform="translate(250, 250)">
+    <!-- VM Bot 1 -->
+    <rect x="-75" y="-40" width="150" height="80" rx="5" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2" />
+    <text x="0" y="-15" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold" fill="#1e3a8a">VM Bot Cluster 1</text>
+    <text x="0" y="10" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#1e3a8a">~1,500 Compromised VMs</text>
+    
+    <!-- VM Bot 2 -->
+    <rect x="-75" y="60" width="150" height="80" rx="5" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2" />
+    <text x="0" y="85" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold" fill="#1e3a8a">VM Bot Cluster 2</text>
+    <text x="0" y="110" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#1e3a8a">~1,500 Compromised VMs</text>
+    
+    <!-- VM Bot 3 -->
+    <rect x="-75" y="160" width="150" height="80" rx="5" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2" />
+    <text x="0" y="185" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold" fill="#1e3a8a">VM Bot Cluster 3</text>
+    <text x="0" y="210" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#1e3a8a">~1,000 Compromised VMs</text>
+    
+    <!-- Attack Arrows -->
+    <path d="M75,0 L450,325" stroke="#ef4444" stroke-width="3" stroke-dasharray="10,5" marker-end="url(#attackArrow)" />
+    <path d="M75,100 L450,325" stroke="#ef4444" stroke-width="3" stroke-dasharray="10,5" marker-end="url(#attackArrow)" />
+    <path d="M75,200 L450,325" stroke="#ef4444" stroke-width="3" stroke-dasharray="10,5" marker-end="url(#attackArrow)" />
+  </g>
+  
+  <!-- Step 2: VM Bots Right Side -->
+  <g transform="translate(750, 250)">
+    <!-- VM Bot 1 -->
+    <rect x="-75" y="-40" width="150" height="80" rx="5" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2" />
+    <text x="0" y="-15" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold" fill="#1e3a8a">VM Bot Cluster 4</text>
+    <text x="0" y="10" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#1e3a8a">~500 Proxies</text>
+    
+    <!-- VM Bot 2 -->
+    <rect x="-75" y="60" width="150" height="80" rx="5" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2" />
+    <text x="0" y="85" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold" fill="#1e3a8a">VM Bot Cluster 5</text>
+    <text x="0" y="110" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#1e3a8a">~500 Server Bots</text>
+    
+    <!-- VM Bot 3 -->
+    <rect x="-75" y="160" width="150" height="80" rx="5" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2" />
+    <text x="0" y="185" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold" fill="#1e3a8a">VM Bot Cluster 6</text>
+    <text x="0" y="210" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#1e3a8a">~500 Cloud VMs</text>
+    
+    <!-- Attack Arrows -->
+    <path d="M-75,0 L-4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV)" />
+    <path d="M-75,100 L-4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV)" />
+    <path d="M-75,200 L-4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV)" />
+  </g>
+  
+  <!-- Step 3: Target -->
+  <g transform="translate(500, 500)">
+    <!-- Target Box -->
+    <rect x="-125" y="-75" width="250" height="150" rx="10" fill="#d1fae5" stroke="#10b981" stroke-width="2" />
+    <text x="0" y="-4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZVTarget Infrastructure</text>
+    <text x="0" y="-15" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#064e3b">Internet & Telecom (36%)</text>
+    <text x="0" y="10" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#064e3b">News, Media & Publishing (15%)</text>
+    <text x="0" y="35" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#064e3b">Gaming & Finance (22%)</text>
+    
+    <!-- Attack Impact Labels -->
+    <text x="0" y="60" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" fill="#064e3b">26 Million HTTPS Requests/Sec</text>
+  </g>
+  
+  <!-- Attack Methodology Callout -->
+  <g transform="translate(175, 450)">
+    <rect x="0" y="0" width="200" height="160" rx="5" fill="white" stroke="#64748b" stroke-width="1" />
+    <text x="100" y="25" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold" fill="#1e293b">Attack Vectors</text>
+    
+    <circle cx="20" cy="50" r="5" fill="#ef4444" />
+    <text x="30" y="55" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="#1e293b">HTTPS Floods</text>
+    
+    <circle cx="20" cy="75" r="5" fill="#ef4444" />
+    <text x="30" y="80" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="#1e293b">TCP Reflection/Amplification</text>
+    
+    <circle cx="20" cy="100" r="5" fill="#ef4444" />
+    <text x="30" y="105" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="#1e293b">Application Layer Attacks</text>
+    
+    <circle cx="20" cy="125" r="5" fill="#ef4444" />
+    <text x="30" y="130" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="#1e293b">Rate Limiting Evasion</text>
+  </g>
+  
+  <!-- Bot Capabilities Callout -->
+  <g transform="translate(625, 450)">
+    <rect x="0" y="0" width="200" height="160" rx="5" fill="white" stroke="#64748b" stroke-width="1" />
+    <text x="100" y="25" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold" fill="#1e293b">VM Bot Capabilities</text>
+    
+    <circle cx="20" cy="50" r="5" fill="#3b82f6" />
+    <text x="30" y="55" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="#1e293b">Complete TLS Handshakes</text>
+    
+    <circle cx="20" cy="75" r="5" fill="#3b82f6" />
+    <text x="30" y="80" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="#1e293b">HTTP Header Manipulation</text>
+    
+    <circle cx="20" cy="100" r="5" fill="#3b82f6" />
+    <text x="30" y="105" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="#1e293b">Browser Fingerprint Simulation</text>
+    
+    <circle cx="20" cy="125" r="5" fill="#3b82f6" />
+    <text x="30" y="130" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="#1e293b">Resource Optimization</text>
+  </g>
+  
+  <!-- Arrowhead Markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#334155" />
+    </marker>
+    <marker id="attackArrow" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ef4444" />
+    </marker>
+  </defs>
+  
+  <!-- VM Infection Flow -->
+  <g transform="translate(80, 120)">
+    <rect x="0" y="0" width="150" height="100" rx="5" fill="#ede9fe" stroke="#8b5cf6" stroke-width="1.5" />
+    <text x="75" y="25" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#5b21b6">Infection Vectors</text>
+    
+    <text x="10" y="4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZVtext>
+    <text x="10" y="65" font-family="Arial, sans-serif" font-size="11" text-anchor="start" fill="#5b21b6">2. Credential Compromise</text>
+    <text x="10" y="85" font-family="Arial, sans-serif" font-size="11" text-anchor="start" fill="#5b21b6">3. Supply Chain Attacks</text>
+  </g>
+  
+  <!-- Stats Box -->
+  <g transform="translate(850, 120)">
+    <rect x="0" y="0" width="140" height="110" rx="5" fill="#fef9c3" stroke="#facc15" stroke-width="1.5" />
+    <text x="70" y="25" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#854d0e">Attack Stats</text>
+    
+    <text x="10" y="4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV>
+    <text x="10" y="65" font-family="Arial, sans-serif" font-size="11" text-anchor="start" fill="#854d0e">• 5,200 RPS per Bot</text>
+    <text x="10" y="85" font-family="Arial, sans-serif" font-size="11" text-anchor="start" fill="#854d0e">• 26M Total RPS</text>
+    <text x="10" y="105" font-family="Arial, sans-serif" font-size="11" text-anchor="start" fill="#854d0e">• 30-80 sec Duration</text>
+  </g>
+</svg>
